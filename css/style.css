@@ -41,6 +41,12 @@ body {
   line-height: 1.8;
 }
 
+strong {
+  color: var(--rose);
+  font-weight: 800;
+}
+
+
 /* ========== Header ========== */
 header {
   position: relative;
@@ -117,11 +123,12 @@ header p {
 
 /* ========== Sektionen ========== */
 section {
-  padding: 80px 20px;
+  padding: 20px 20px;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
+
 
 section h2 {
   font-family: var(--serif);
@@ -161,6 +168,15 @@ section p {
   transform: translateY(-2px);
 }
 
+/* ========== Image ========== */
+img {
+  width: 80%;
+  max-width: 640px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
 /* ========== Video ========== */
 video {
   width: 100%;
@@ -189,3 +205,80 @@ footer {
   header p { font-size: 1.6rem; }
   section h2 { font-size: 2.8rem; }
 }
+
+/* ========== Thank you section ========== */
+.thanks {
+  background: #fff;
+  border-radius: 20px;
+  margin: 60px auto;
+  padding: 10px 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+}
+
+.thanks p {
+  margin-bottom: 15px;
+}
+
+/* ========== Timeline section ========== */
+
+.timeline {
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline-day {
+  margin-top: 40px;
+}
+
+.timeline-day h3 {
+  text-align: center;
+  font-family: var(--serif);
+  font-size: 2rem;
+  color: var(--rose);
+  position: relative;
+  margin: 0, 5;
+  
+
+}
+
+.timeline-entry {
+  display: grid;
+  grid-template-columns: 1fr 40px 2fr;
+  align-items: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* vertikale Linie */
+.timeline-entry::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 1px);
+  top: -25px;
+  bottom: -25px;
+  width: 2px;
+  background: var(--rose);
+  z-index: 0;
+}
+
+.timeline-entry:first-of-type::before {
+  top: 10px;
+}
+
+.timeline-entry:last-of-type::before {
+  bottom: 10px;
+}
+
+.time {
+  text-align: right;
+  padding-right: 20px;
+  font-weight: 600;
+  color: var(--gold);
+}
+
+.event {
+  padding-left: 20px;
+}
+
+
+
