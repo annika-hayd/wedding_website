@@ -142,12 +142,19 @@
     </p>
     <p>Vielen Dank an Robin Heller für die Komposition des Deko- und Kleidungskonzepts.</p>
     
-    <div class="image">
-      <img src="assets/img/Farbkonzept.jpg" alt="Farbkonzept">
-    </div>
-    <div class="image">
-      <img src="assets/img/Kleidungskonzept.png" alt="Kleidungskonzept">
-    </div>
+    <button class="button" onclick="toggleFunction('farbkonzept')">Dekokonzept anzeigen</button>
+  <!--h3 class="toggle-title" data-target="farbkonzept">Farbkonzept anzeigen</h3-->
+  <div id="farbkonzept" class="toggle-image">
+    <img src="assets/img/Farbkonzept.jpg" alt="Farbkonzept">
+  </div>
+  <br>
+
+  <button class="button" onclick="toggleFunction('kleidungskonzept')">Kleidungskonzept anzeigen</button>
+  <!--h3 class="toggle-title" data-target="kleidungskonzept">Kleidungskonzept anzeigen</h3-->
+  <div id="kleidungskonzept" class="toggle-image">
+    <img src="assets/img/Kleidungskonzept.png" alt="Kleidungskonzept">
+  </div>
+
     
     <p>
 Florale Muster, natürliche Materialien und helle Farben passen wunderbar zum Stil. 
@@ -202,6 +209,18 @@ Weitere Eindrücke findet ihr auf unserem Pinterest-Board:
     p.src = '//assets.pinterest.com/js/pinit.js';
     f.parentNode.insertBefore(p, f);
   })(document);
+</script>
+<script>
+  function toggleFunction(toggleElement){
+    const el = document.getElementById(toggleElement);
+    const current = window.getComputedStyle(el).display;
+
+    if (current === "none") {
+      el.style.display = "block";
+    } else {
+      el.style.display = "none";
+    }
+  }
 </script>
 </body>
 </html>

@@ -158,10 +158,14 @@ section p {
   background: var(--gold);
   color: white;
   padding: 12px 25px;
+  margin: 5px;
   border-radius: 10px;
   text-decoration: none;
   transition: all 0.3s;
   font-weight: 500;
+  border: 0;
+  font-family: var(--text);
+  font-size: 18px;
 }
 .button:hover {
   background: #a88a57;
@@ -175,6 +179,21 @@ img {
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.1);
   margin-top: 20px;
+}
+
+.toggle-image {
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.toggle-title {
+  cursor: pointer;
+  color: #7a5c3e; /* z.B. ein warmes Braun */
+  margin-top: 1.5rem;
+}
+
+.toggle-title:hover {
+  text-decoration: underline;
 }
 
 /* ========== Video ========== */
