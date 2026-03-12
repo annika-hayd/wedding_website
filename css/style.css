@@ -19,14 +19,14 @@
 
 /* ========== Farben & Grundlayout ========== */
 :root {
-  --cream: #FEF7EC;
-  --sage: #FEB4B3;
-  --rose: #E47081;
+  --cream: #fffcf7;
+  --sage: #f5d8d2;
+  --rose: #cc3d63;
   --rose2: #F17376;
   --rose3:#E07383;
-  --gold: #B06F2C;
+  --gold: #976513;
   --akzent: #9DA7E1;
-  --text: #657c68;
+  --text: #516254;
   --serif: 'Lavishly Yours';
   --serif2: 'Fleur De Leah';
   --sans: 'Cormant Garamond', sans-serif;
