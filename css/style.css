@@ -186,15 +186,57 @@ img {
   margin-bottom: 1rem;
 }
 
-.toggle-title {
-  cursor: pointer;
-  color: #7a5c3e; /* z.B. ein warmes Braun */
-  margin-top: 1.5rem;
+/* ========== FAQ ========== */
+.faq {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.toggle-title:hover {
-  text-decoration: underline;
+.faq details {
+  background: white;
+  border-radius: 12px;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
+.faq details[open] {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.faq summary {
+  font-weight: 600;
+  color: var(--gold);
+  list-style: none;
+  position: relative;
+  padding-right: 25px;
+}
+
+/* Pfeil entfernen (Standard) */
+.faq summary::-webkit-details-marker {
+  display: none;
+}
+
+/* eigener Pfeil */
+.faq summary::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  font-size: 1.2rem;
+  transition: transform 0.3s;
+}
+
+.faq details[open] summary::after {
+  content: "–";
+}
+
+.faq p {
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
 
 /* ========== Video ========== */
 video {
