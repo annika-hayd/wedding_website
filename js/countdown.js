@@ -1,6 +1,6 @@
     // Countdown Script
     const countdown = document.getElementById("countdown");
-    const weddingDate = new Date("2026-06-13T00:00:01").getTime();
+    const weddingDate = new Date("2026-06-13T14:00:01").getTime();
 
     function updateCountdown() {
       const now = new Date().getTime();
